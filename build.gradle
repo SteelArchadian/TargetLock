@@ -1,0 +1,25 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+version = '0.4.0'
+group = 'dev.targetlock'
+base { archivesName = 'target-lock-1.21.1' }
+java { toolchain.languageVersion = JavaLanguageVersion.of(21) }
+neoForge {
+    version = '21.1.252'
+    runs {
+        client { client() }
+    }
+    mods { targetlock { sourceSet(sourceSets.main) } }
+}
+repositories { mavenCentral(); mavenLocal() }
+dependencies {
+    compileOnly 'dev.configpanel:config-panel-1.21.1:1.0.1'
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar') {
+    manifest { attributes('Implementation-Version': project.version, 'Implementation-Title': 'Target Lock') }
+    from('LICENSE') { rename { 'LICENSE-targetlock' } }
+    from('COPYING') { rename { 'COPYING-targetlock' } }
+}

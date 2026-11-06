@@ -1,0 +1,3 @@
+{"name":"Zelda","layers":[
+ {"texture":"targetlock:textures/reticle/triangle.png","size":18,"count":4,"radius":14,"radius_pulse":2,"pulse_speed":1.3,"orbit_speed":100,"orient":"radial","color":"#FFD22E","fit":1.0}
+]}

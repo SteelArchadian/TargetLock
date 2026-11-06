@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="LGPL-3.0-only"
+[[mods]]
+modId="targetlock"
+version="${file.jarVersion}"
+displayName="Target Lock"
+authors="Chill"
+description='''Zelda-style Z-targeting: press a key to lock onto a mob, the camera follows it, movement becomes strafing around it. Selectable reticle themes (add your own with a resource pack). Client-side only. Made with AI assistance.'''
+[[dependencies.targetlock]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.targetlock]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="CLIENT"

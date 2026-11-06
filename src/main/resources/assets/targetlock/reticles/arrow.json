@@ -1,0 +1,3 @@
+{"name":"Hover arrow","layers":[
+ {"texture":"targetlock:textures/reticle/arrow.png","size":34,"anchor":"above","y_offset":-12,"bob":4,"bob_speed":1.6,"target_scale":110,"color":"#FF7A1A"}
+]}
